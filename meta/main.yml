@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  role_name: hugo
+  author: "Ilya Fralkou (aka Dzmuh)"
+  description: Installs/Uninstalls 'Hugo', which is one of the most popular open source static site generator.
+  company: none
+  license: The Unlicense
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - bionic
+
+  galaxy_tags:
+    - hugo
+    - staticsitegenerator
+    - frontend

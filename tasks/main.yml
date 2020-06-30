@@ -1,0 +1,16 @@
+---
+# tasks file for hugo
+
+- name: Include release specific tasks
+  include_tasks: "{{ lookup('first_found', _params) }}"
+  vars:
+    _params:
+      files:
+        - "{{ ansible_distribution | lower }}-{{ ansible_distribution_version | lower }}.yml"
+        - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
+        - "{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
+        - "{{ ansible_distribution | lower }}.yml"
+        - "{{ ansible_os_family | lower }}.yml"
+      paths:
+        - "."
+  ignore_errors: true
