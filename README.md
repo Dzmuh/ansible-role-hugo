@@ -23,3 +23,7 @@ hugo_bin_path: /usr/local/bin
 ## TODO
 
 - [ ] Установка Hugo для текущего пользователя
+
+## Links
+
+* [Hugo Releases](https://github.com/gohugoio/hugo/releases)
