@@ -23,6 +23,7 @@ hugo_bin_path: /usr/local/bin
 ## TODO
 
 - [ ] Установка Hugo для текущего пользователя
+- [ ] Удаление Hugo
 
 ## Links
 
